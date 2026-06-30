@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-scheme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>Writing — Quynh Van</title>
+    <meta
+      name="description"
+      content="Writing by Quynh Van — essays on being human, attention, and the search for a meaningful life."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <script>
+(function(){
+  var s = localStorage.getItem('qv-color-scheme');
+  document.documentElement.setAttribute('data-scheme', s || 'light');
+})();
+    </script>
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div class="scroll-track" aria-hidden="true">
+      <div class="scroll-track__fill" id="scroll-track-fill"></div>
+    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="logo" href="index.html">Quynh Van</a>
+      <div class="site-header__end">
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html#work">Work</a>
+          <a href="index.html#about">About</a>
+          <a href="https://drive.google.com/file/d/1D-Vr1g6KDJfkitrsRfkTs-6J6AD7GKog/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+        </nav>
+        <button
+          type="button"
+          class="theme-toggle"
+          aria-label="Switch to dark mode"
+        >
+          <svg
+            class="theme-toggle__icon theme-toggle__icon--moon"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg
+            class="theme-toggle__icon theme-toggle__icon--sun"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="cs-back">
+      <a href="index.html#writing">← Back</a>
+    </div>
+
+    <main id="main">
+      <section class="writing-teaser writing-page" aria-labelledby="writing-heading">
+        <div class="writing-teaser__head">
+          <h2 id="writing-heading" class="writing-teaser__label">Writing.</h2>
+        </div>
+        <p class="writing-teaser__sub">
+          I write about the strange condition of being human and the search for a meaningful life.
+        </p>
+        <ul class="writing-list">
+          <li class="writing-list__item">
+            <a
+              class="writing-list__link"
+              href="https://quynhxnewsletter.substack.com/p/the-religion-of-love"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="writing-list__dot" aria-hidden="true"></span>
+              <span class="writing-list__title"
+                >The Religion of Love <span class="writing-arrow" aria-hidden="true">→</span></span
+              >
+              <span class="writing-list__leader" aria-hidden="true"></span>
+              <span class="writing-list__date">2026</span>
+            </a>
+            <p class="writing-list__sub">On worship, witness, and the divinity of paying attention.</p>
+          </li>
+          <li class="writing-list__item">
+            <a
+              class="writing-list__link"
+              href="https://quynhxnewsletter.substack.com/p/does-social-media-shorten-our-lives"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="writing-list__dot" aria-hidden="true"></span>
+              <span class="writing-list__title"
+                >Does Social Media Shorten Our Lives? <span class="writing-arrow" aria-hidden="true">→</span></span
+              >
+              <span class="writing-list__leader" aria-hidden="true"></span>
+              <span class="writing-list__date">2026</span>
+            </a>
+            <p class="writing-list__sub">Does it matter if we live 80 years if 40 of them are staring at a screen?</p>
+          </li>
+          <li class="writing-list__item">
+            <a
+              class="writing-list__link"
+              href="https://quynhxnewsletter.substack.com/p/the-iron-cage-how-religious-anxiety"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="writing-list__dot" aria-hidden="true"></span>
+              <span class="writing-list__title"
+                >The Iron Cage: How Religious Anxiety Became Modern Burnout <span class="writing-arrow" aria-hidden="true">→</span></span
+              >
+              <span class="writing-list__leader" aria-hidden="true"></span>
+              <span class="writing-list__date">2026</span>
+            </a>
+            <p class="writing-list__sub">Capitalism didn't invent our anxiety about work. Religion did, and we secularized it without solving it.</p>
+          </li>
+          <li class="writing-list__item">
+            <a
+              class="writing-list__link"
+              href="https://quynhxnewsletter.substack.com/p/beauty-isnt-empowerment-if-opting"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="writing-list__dot" aria-hidden="true"></span>
+              <span class="writing-list__title"
+                >Beauty Isn't Empowerment If Opting Out Isn't Allowed <span class="writing-arrow" aria-hidden="true">→</span></span
+              >
+              <span class="writing-list__leader" aria-hidden="true"></span>
+              <span class="writing-list__date">2026</span>
+            </a>
+            <p class="writing-list__sub">How the cult of perfection became the high-stakes tax on women's power.</p>
+          </li>
+          <li class="writing-list__item">
+            <a
+              class="writing-list__link"
+              href="https://quynhxnewsletter.substack.com/p/the-cult-of-the-self"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="writing-list__dot" aria-hidden="true"></span>
+              <span class="writing-list__title"
+                >The Cult of the Self <span class="writing-arrow" aria-hidden="true">→</span></span
+              >
+              <span class="writing-list__leader" aria-hidden="true"></span>
+              <span class="writing-list__date">2025</span>
+            </a>
+            <p class="writing-list__sub">How our generation got trapped in an ideology that mistakes isolation for empowerment.</p>
+          </li>
+          <li class="writing-list__item">
+            <a
+              class="writing-list__link"
+              href="https://quynhxnewsletter.substack.com/p/i-went-offline-for-four-years-heres"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="writing-list__dot" aria-hidden="true"></span>
+              <span class="writing-list__title"
+                >I Went Offline for Four Years. Here's What Shocked Me When I Came Back. <span class="writing-arrow" aria-hidden="true">→</span></span
+              >
+              <span class="writing-list__leader" aria-hidden="true"></span>
+              <span class="writing-list__date">2025</span>
+            </a>
+            <p class="writing-list__sub">Coming back after four years offline revealed a culture obsessed with perfection, consumption, and certainty.</p>
+          </li>
+          <li class="writing-list__item">
+            <a
+              class="writing-list__link"
+              href="https://quynhxnewsletter.substack.com/p/i-quit-social-media-for-four-years"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="writing-list__dot" aria-hidden="true"></span>
+              <span class="writing-list__title"
+                >I Quit Social Media for Four Years — This Is What Changed <span class="writing-arrow" aria-hidden="true">→</span></span
+              >
+              <span class="writing-list__leader" aria-hidden="true"></span>
+              <span class="writing-list__date">2025</span>
+            </a>
+            <p class="writing-list__sub">Four years offline taught me everything I didn't know I needed.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__greeting">Thanks for stopping by!</p>
+        <p class="site-footer__reach">
+          Reach me at
+          <a href="mailto:qvan@andrew.cmu.edu">qvan@andrew.cmu.edu</a>. Love a coffee chat!
+        </p>
+        <p class="site-footer__quick">
+          <a
+            href="https://drive.google.com/file/d/1D-Vr1g6KDJfkitrsRfkTs-6J6AD7GKog/view?usp=sharing"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Resume</a
+          >
+          <span class="site-footer__pipe" aria-hidden="true">|</span>
+          <a
+            href="https://linkedin.com/in/quynhxvan"
+            rel="noopener noreferrer"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <span class="site-footer__pipe" aria-hidden="true">|</span>
+          <a href="mailto:qvan@andrew.cmu.edu">Email</a>
+        </p>
+        <div class="site-footer__signoff-row">
+          <p class="site-footer__signoff">Made with 🍵 by Quynh Van</p>
+          <div class="sun-arc-wrap">
+            <svg class="sun-arc" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Local sun position</title>
+              <path
+                d="M2 24 A22 22 0 0 1 46 24"
+                stroke="var(--border)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <circle class="sun-dot" cx="24" cy="24" r="3" fill="var(--accent)" />
+            </svg>
+            <span class="sun-arc-hint" aria-hidden="true">local time</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="js/interactions.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/cursor.js" defer></script>
+    <script src="js/warmth.js" defer></script>
+    <script>
+      document.addEventListener("click", function (e) {
+        var ripple = document.createElement("div");
+        ripple.className = "ripple";
+        ripple.style.left = e.clientX + "px";
+        ripple.style.top = e.clientY + "px";
+        document.body.appendChild(ripple);
+        function removeRipple() {
+          if (ripple.parentNode) ripple.remove();
+        }
+        ripple.addEventListener("animationend", removeRipple, { once: true });
+        setTimeout(function () {
+          if (ripple.parentNode) ripple.remove();
+        }, 800);
+      });
+    </script>
+    <script>
+      (function () {
+        var dot = document.querySelector(".sun-dot");
+        if (!dot) return;
+
+        function updateSun() {
+          var now = new Date();
+          var hours = now.getHours() + now.getMinutes() / 60;
+          var isDay = hours >= 6 && hours < 20;
+
+          if (!isDay) {
+            dot.setAttribute("fill", "var(--text-2)");
+            dot.style.opacity = "0.3";
+            var nx =
+              2 +
+              44 *
+                (hours >= 20 ? 1 - (hours - 20) / 10 : hours / 6);
+            dot.setAttribute("cx", nx.toFixed(1));
+            dot.setAttribute("cy", "24");
+            return;
+          }
+
+          dot.setAttribute("fill", "var(--accent)");
+          dot.style.opacity = "1";
+          var dayProgress = (hours - 6) / 14;
+          var angle = Math.PI * dayProgress;
+          var cx = 2 + 44 * dayProgress;
+          var cy = 24 - Math.sin(angle) * 22;
+          dot.setAttribute("cx", cx.toFixed(1));
+          dot.setAttribute("cy", cy.toFixed(1));
+        }
+
+        updateSun();
+        setInterval(updateSun, 60000);
+      })();
+    </script>
+    <script>
+      (function() {
+        var btn = document.getElementById('back-to-top');
+        if (!btn) return;
+        window.addEventListener('scroll', function() {
+          btn.classList.toggle('visible', window.scrollY > 400);
+        }, { passive: true });
+        btn.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      })();
+    </script>
+    <script>
+(function() {
+  var track = document.querySelector('.scroll-track');
+  var fill = document.getElementById('scroll-track-fill');
+  if (!track || !fill) return;
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    fill.style.height = progress + '%';
+    track.classList.toggle('visible', scrollTop > 200);
+  }, { passive: true });
+})();
+    </script>
+  </body>
+</html>

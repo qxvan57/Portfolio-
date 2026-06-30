@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" data-scheme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>Quynh Van</title>
+    <meta
+      name="description"
+      content="Quynh Van — product designer at Carnegie Mellon. AI, language, and media."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <script>
+(function(){
+  var s = localStorage.getItem('qv-color-scheme');
+  document.documentElement.setAttribute('data-scheme', s || 'light');
+})();
+    </script>
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div class="scroll-track" aria-hidden="true">
+      <div class="scroll-track__fill" id="scroll-track-fill"></div>
+    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="logo" href="#">Quynh Van</a>
+      <div class="site-header__end">
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#work" class="active">Work</a>
+          <a href="#about">About</a>
+          <a href="https://drive.google.com/file/d/1D-Vr1g6KDJfkitrsRfkTs-6J6AD7GKog/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+        </nav>
+        <button
+          type="button"
+          class="theme-toggle"
+          aria-label="Switch to dark mode"
+        >
+          <svg
+            class="theme-toggle__icon theme-toggle__icon--moon"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg
+            class="theme-toggle__icon theme-toggle__icon--sun"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="intro" aria-labelledby="intro-heading">
+        <h1 id="intro-heading" class="intro__headline">Designing <em>human</em> experiences.</h1>
+        <p class="intro__bio">
+          Hi, I'm <span class="bio-accent">Quynh</span>. I'm a product designer working at the intersection of <span class="bio-accent">AI</span> <span class="bio-and"> and </span><span class="bio-accent">human-centered systems</span>: health tech, media, and creative tooling. ✴︎ ✎
+        </p>
+        <p class="intro__currently intro__currently--row">
+          <span class="currently__label">Currently</span>
+          <span class="currently__value">MHCI @ Carnegie Mellon</span>
+        </p>
+        <div class="intro__icons" role="group" aria-label="Contact links">
+          <a
+            class="intro__icon-link"
+            href="https://drive.google.com/file/d/1D-Vr1g6KDJfkitrsRfkTs-6J6AD7GKog/view?usp=sharing"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Resume"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+          </a>
+          <a
+            class="intro__icon-link"
+            href="https://linkedin.com/in/quynhxvan"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a
+            class="intro__icon-link"
+            href="mailto:qvan@andrew.cmu.edu"
+            aria-label="Email"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </header>
+
+      <section id="work" class="work-band" aria-labelledby="work-heading">
+        <div class="work-band__head">
+          <h2 id="work-heading" class="work-band__label">Work.</h2>
+        </div>
+
+        <div class="work-list">
+          <article class="work-row">
+            <a class="work-row__link" href="work/welcomemn.html">
+              <div class="work-row__body">
+                <p class="work-row__meta">Civic platform · Minneapolis</p>
+                <h3 class="work-row__title">WelcomeMN</h3>
+                <p class="work-row__line">
+                  Immigrant resources made legible: navigation, trust, and plain
+                  language for newcomers.
+                </p>
+                <p class="work-row__tags">⊙ Civic tech ⇒ UX Research ♛ Web platform</p>
+              </div>
+              <div
+                class="work-row__thumb work-row__thumb--welcomemn"
+                aria-hidden="true"
+              >
+                <video class="work-thumb-video" muted playsinline preload="auto">
+                  <source src="images/cs-wmn-thumb.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <span class="work-row__go" aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="work-row">
+            <a class="work-row__link" href="work/pluscloset.html">
+              <div class="work-row__body">
+                <p class="work-row__meta">Mobile product · resale</p>
+                <h3 class="work-row__title">Plus Closet</h3>
+                <p class="work-row__line">
+                  Plus-size-first resale: fit, trust, and checkout on small screens.
+                </p>
+                <p class="work-row__tags">⊙ E-commerce ⇒ Product Design ♛ Mobile</p>
+              </div>
+              <div
+                class="work-row__thumb work-row__thumb--pluscloset"
+                aria-hidden="true"
+              >
+                <img src="images/cs-pc-hero.png" alt="" />
+              </div>
+              <span class="work-row__go" aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="work-row work-row--soon">
+            <div class="work-row__body">
+              <h3 class="work-row__title">More from CMU, coming soon</h3>
+            </div>
+            <div class="work-row__thumb work-row__thumb--soon" aria-hidden="true"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="making" class="making-band" aria-labelledby="making-heading">
+        <h2 id="making-heading" class="making-band__label">Making.</h2>
+        <p class="making-band__sub">other things I've made</p>
+        <div class="making-grid">
+
+          <a href="https://www.tiktok.com/@quynhxvan/video/7512318626385497375" target="_blank" rel="noopener" class="making-item">
+            <p class="making-item__title">[1.0] Commentary on attention, technology, and how we live online.</p>
+            <div class="making-item__tags">
+              <span class="making-tag-liz">⊙ Content</span>
+              <span class="making-tag-sep">⇒</span>
+              <span class="making-tag-liz">120K+ community</span>
+            </div>
+          </a>
+
+          <a href="https://vintagephoto.lovable.app" target="_blank" rel="noopener" class="making-item">
+            <p class="making-item__title">[2.0] A film photobooth built for the slow joy of analog in a fast, pixel-perfect world.</p>
+            <div class="making-item__tags">
+              <span class="making-tag-liz">⊙ Interactive</span>
+              <span class="making-tag-sep">⇒</span>
+              <span class="making-tag-liz">Physical + Code</span>
+            </div>
+          </a>
+
+          <a href="https://www.figma.com/design/FbTB3tnpXt1iRNA8BNAGwl/Springboard-Prototypes?node-id=0-1&amp;t=MbzXhKCGV3RUG4PS-1" target="_blank" rel="noopener" class="making-item">
+            <p class="making-item__title">[3.0] Picklepals, a team management app for players to organize games and leagues.</p>
+            <div class="making-item__tags">
+              <span class="making-tag-liz">⊙ Product</span>
+              <span class="making-tag-sep">⇒</span>
+              <span class="making-tag-liz">Figma Prototype</span>
+            </div>
+          </a>
+
+          <div class="making-item">
+            <p class="making-item__title">[4.0] An intentional redirect app for the moment after you pick up your phone.</p>
+            <div class="making-item__tags">
+              <span class="making-tag-liz">⊙ Product</span>
+              <span class="making-tag-sep">⇒</span>
+              <span class="making-tag-liz">Mobile Design</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="about" class="about-block" aria-labelledby="about-heading">
+        <h2 id="about-heading" class="about-block__label">About.</h2>
+        <div class="about-block__grid">
+          <div class="about-block__photo-col">
+            <img
+              class="about-block__photo"
+              src="images/about-quynh.png"
+              alt="Quynh Van"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="about-block__body">
+            <h2 class="about-block__name">Hi, I'm Quynh.</h2>
+            <p class="about-block__nickname">But most people call me <span class="bio-accent">Q</span>.</p>
+            <p>I'm a product designer working at the intersection of <span class="bio-accent">AI</span> <span class="bio-and"> and </span><span class="bio-accent">human-centered systems</span>. I care about public trust in technology and how design can make complex, high-stakes information transparent and accessible for the people who need it most, in health tech, media, and civic systems.</p>
+            <p>Before studying HCI at Carnegie Mellon, I spent three years in editorial at an independent literary press producing Pulitzer Prize finalists and National Book Award winners. A submission portal failure that systematically blocked writers from underrepresented communities made something clear: information architecture is never neutral — and it solidified my commitment to <span class="bio-accent">human-centered design</span>.</p>
+            <p>I also create content about technology, attention, and digital behavior, reaching 120K+ on social platforms. My work has been featured in the Associated Press and Newsweek.</p>
+            <p>Outside of work you can find me deep in a literary fiction novel, running, playing tennis, searching for the best matcha in the city, or sitting outside looking at trees longer than most people think is reasonable.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="reading" class="reading-block" aria-labelledby="reading-heading">
+        <h2 id="reading-heading" class="reading-block__label">Reading.</h2>
+        <p class="reading-block__sub">current nightstand stack</p>
+        <div class="reading-grid">
+          <div class="book-wrapper book-glass">
+            <div class="book-front">
+              <img src="images/reading-normal-people.png" alt="Normal People" loading="lazy" decoding="async" />
+              <div class="book-thought"><p>People can't help but change one another.</p></div>
+            </div>
+            <p class="book-title">Normal People</p>
+            <p class="book-author">Sally Rooney</p>
+          </div>
+
+          <div class="book-wrapper book-glass">
+            <div class="book-front">
+              <img src="images/reading-east-of-eden.png" alt="East of Eden" loading="lazy" decoding="async" />
+              <div class="book-thought"><p>Now that you don't have to be perfect, you can be good.</p></div>
+            </div>
+            <p class="book-title">East of Eden</p>
+            <p class="book-author">John Steinbeck</p>
+          </div>
+
+          <div class="book-wrapper book-glass">
+            <div class="book-front">
+              <img
+                src="images/reading-monte-cristo.png"
+                alt="The Count of Monte Cristo"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="book-thought"><p>Hope and wait.</p></div>
+            </div>
+            <p class="book-title">The Count of Monte Cristo</p>
+            <p class="book-author">Alexandre Dumas</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="writing" class="writing-teaser" aria-labelledby="writing-heading">
+        <div class="writing-teaser__head">
+          <h2 id="writing-heading" class="writing-teaser__label">
+            <a class="writing-teaser__head-link" href="writing.html"
+              >Writing <span class="writing-arrow" aria-hidden="true">→</span></a
+            >
+          </h2>
+        </div>
+        <p class="writing-teaser__sub">notes on technology, attention, and human behavior</p>
+        <ul class="writing-list">
+          <li class="writing-list__item">
+            <a
+              class="writing-list__link"
+              href="https://quynhxnewsletter.substack.com/p/does-social-media-shorten-our-lives"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="writing-list__dot" aria-hidden="true"></span>
+              <span class="writing-list__title"
+                >Does Social Media Shorten Our Lives? <span class="writing-arrow" aria-hidden="true">→</span></span
+              >
+              <span class="writing-list__leader" aria-hidden="true"></span>
+              <span class="writing-list__date">2026</span>
+            </a>
+          </li>
+          <li class="writing-list__item">
+            <a
+              class="writing-list__link"
+              href="https://quynhxnewsletter.substack.com/p/the-cult-of-the-self"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="writing-list__dot" aria-hidden="true"></span>
+              <span class="writing-list__title"
+                >The Cult of the Self <span class="writing-arrow" aria-hidden="true">→</span></span
+              >
+              <span class="writing-list__leader" aria-hidden="true"></span>
+              <span class="writing-list__date">2025</span>
+            </a>
+          </li>
+          <li class="writing-list__item">
+            <a
+              class="writing-list__link"
+              href="https://quynhxnewsletter.substack.com/p/i-went-offline-for-four-years-heres"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="writing-list__dot" aria-hidden="true"></span>
+              <span class="writing-list__title"
+                >I Went Offline for Four Years. Here's What Shocked Me When I Came Back. <span class="writing-arrow" aria-hidden="true">→</span></span
+              >
+              <span class="writing-list__leader" aria-hidden="true"></span>
+              <span class="writing-list__date">2025</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="photo-strip-section" aria-label="Glimpses">
+        <h2 class="photo-strip__label">Glimpses.</h2>
+        <p class="photo-strip__sub">life outside the brief</p>
+        <div class="photo-strip">
+          <img class="photo-strip__item" src="images/glimpse-portrait.png" alt="Portrait of Quynh Van" loading="lazy" decoding="async" />
+          <img class="photo-strip__item" src="images/glimpse-sunset.jpg" alt="Sunset on the water" loading="lazy" decoding="async" />
+          <img class="photo-strip__item" src="images/glimpse-hiking.jpg" alt="Hiking" loading="lazy" decoding="async" />
+          <img class="photo-strip__item" src="images/glimpse-bw.jpg" alt="Bridge" loading="lazy" decoding="async" />
+          <img class="photo-strip__item" src="images/glimpse-field.jpg" alt="Running in a field" loading="lazy" decoding="async" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__greeting">Thanks for stopping by!</p>
+        <p class="site-footer__reach">
+          Reach me at
+          <a href="mailto:qvan@andrew.cmu.edu">qvan@andrew.cmu.edu</a>. Love a coffee chat!
+        </p>
+        <p class="site-footer__quick">
+          <a
+            href="https://drive.google.com/file/d/1D-Vr1g6KDJfkitrsRfkTs-6J6AD7GKog/view?usp=sharing"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Resume</a
+          >
+          <span class="site-footer__pipe" aria-hidden="true">|</span>
+          <a
+            href="https://linkedin.com/in/quynhxvan"
+            rel="noopener noreferrer"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <span class="site-footer__pipe" aria-hidden="true">|</span>
+          <a href="mailto:qvan@andrew.cmu.edu">Email</a>
+        </p>
+        <div class="site-footer__signoff-row">
+          <p class="site-footer__signoff">Made with 🍵 by Quynh Van</p>
+          <div class="sun-arc-wrap">
+            <svg class="sun-arc" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Local sun position</title>
+              <path
+                d="M2 24 A22 22 0 0 1 46 24"
+                stroke="var(--border)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <circle class="sun-dot" cx="24" cy="24" r="3" fill="var(--accent)" />
+            </svg>
+            <span class="sun-arc-hint" aria-hidden="true">local time</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="js/interactions.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/cursor.js" defer></script>
+    <script src="js/warmth.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+        var targets = document.querySelectorAll(
+          ".work-band__head, .work-row, .making-band, .about-block, .reading-block, .reading-grid, .writing-teaser, .photo-strip-section, .site-footer"
+        );
+
+        targets.forEach(function (el) {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(20px)";
+          el.style.transition = "opacity 0.5s ease-out, transform 0.5s ease-out";
+        });
+
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.07, rootMargin: "0px 0px -30px 0px" }
+        );
+
+        targets.forEach(function (el) {
+          observer.observe(el);
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("click", function (e) {
+        var ripple = document.createElement("div");
+        ripple.className = "ripple";
+        ripple.style.left = e.clientX + "px";
+        ripple.style.top = e.clientY + "px";
+        document.body.appendChild(ripple);
+        function removeRipple() {
+          if (ripple.parentNode) ripple.remove();
+        }
+        ripple.addEventListener("animationend", removeRipple, { once: true });
+        setTimeout(function () {
+          if (ripple.parentNode) ripple.remove();
+        }, 800);
+      });
+    </script>
+    <script>
+      (function () {
+        var dot = document.querySelector(".sun-dot");
+        if (!dot) return;
+
+        function updateSun() {
+          var now = new Date();
+          var hours = now.getHours() + now.getMinutes() / 60;
+          var isDay = hours >= 6 && hours < 20;
+
+          if (!isDay) {
+            dot.setAttribute("fill", "var(--text-2)");
+            dot.style.opacity = "0.3";
+            var nx =
+              2 +
+              44 *
+                (hours >= 20 ? 1 - (hours - 20) / 10 : hours / 6);
+            dot.setAttribute("cx", nx.toFixed(1));
+            dot.setAttribute("cy", "24");
+            return;
+          }
+
+          dot.setAttribute("fill", "var(--accent)");
+          dot.style.opacity = "1";
+          var dayProgress = (hours - 6) / 14;
+          var angle = Math.PI * dayProgress;
+          var cx = 2 + 44 * dayProgress;
+          var cy = 24 - Math.sin(angle) * 22;
+          dot.setAttribute("cx", cx.toFixed(1));
+          dot.setAttribute("cy", cy.toFixed(1));
+        }
+
+        updateSun();
+        setInterval(updateSun, 60000);
+      })();
+    </script>
+    <script>
+      (function() {
+        var btn = document.getElementById('back-to-top');
+        if (!btn) return;
+        window.addEventListener('scroll', function() {
+          btn.classList.toggle('visible', window.scrollY > 400);
+        }, { passive: true });
+        btn.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      })();
+    </script>
+    <script>
+(function() {
+  var track = document.querySelector('.scroll-track');
+  var fill = document.getElementById('scroll-track-fill');
+  if (!track || !fill) return;
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    fill.style.height = progress + '%';
+    track.classList.toggle('visible', scrollTop > 200);
+  }, { passive: true });
+})();
+    </script>
+    <script>
+(function() {
+  var headline = document.querySelector('.intro__headline');
+  if (!headline) return;
+  window.addEventListener('scroll', function() {
+    var scrolled = window.scrollY;
+    var fade = 1 - (scrolled / 300);
+    headline.style.opacity = Math.max(fade, 0);
+  }, { passive: true });
+})();
+    </script>
+    <script>
+(function() {
+  document.querySelectorAll('a').forEach(function(link) {
+    if (link.hostname === window.location.hostname && !link.hash) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var href = this.href;
+        document.body.style.opacity = '0';
+        document.body.style.transition = 'opacity 0.3s ease';
+        setTimeout(function() {
+          window.location.href = href;
+        }, 300);
+      });
+    }
+  });
+})();
+    </script>
+    <script>
+(function() {
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function playFromStart(vid) {
+    vid.currentTime = 0;
+    var p = vid.play();
+    if (p && p.catch) p.catch(function() {});
+  }
+
+  document.querySelectorAll('.work-thumb-video').forEach(function(vid) {
+    // Freeze on the first frame whenever the clip finishes
+    vid.addEventListener('ended', function() {
+      vid.currentTime = 0;
+      vid.pause();
+    });
+
+    // Replay once on hover, then freeze again
+    var trigger = vid.closest('.work-row__link') || vid.closest('.work-row__thumb') || vid.parentElement;
+    if (trigger) {
+      trigger.addEventListener('mouseenter', function() {
+        playFromStart(vid);
+      });
+    }
+
+    // Autoplay once when the page loads, then freeze on the first frame
+    if (!reduceMotion) {
+      if (vid.readyState >= 2) {
+        playFromStart(vid);
+      } else {
+        vid.addEventListener('loadeddata', function onLoaded() {
+          vid.removeEventListener('loadeddata', onLoaded);
+          playFromStart(vid);
+        });
+      }
+    }
+  });
+})();
+    </script>
+  </body>
+</html>

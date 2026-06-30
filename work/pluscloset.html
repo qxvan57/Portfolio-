@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" data-scheme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <title>Plus Closet — Quynh Van</title>
+    <meta
+      name="description"
+      content="Plus Closet — an inclusive resale experience for plus-size shoppers on mobile."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <script>
+(function(){
+  var s = localStorage.getItem('qv-color-scheme');
+  document.documentElement.setAttribute('data-scheme', s || 'dark');
+})();
+    </script>
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+  <body class="case-study">
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div class="scroll-track" aria-hidden="true">
+      <div class="scroll-track__fill" id="scroll-track-fill"></div>
+    </div>
+    <div class="cs-back">
+      <a href="../index.html#work">← Work</a>
+    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="logo" href="../index.html">Quynh Van</a>
+      <div class="site-header__end">
+        <button
+          type="button"
+          class="theme-toggle"
+          aria-label="Switch to dark mode"
+        >
+          <svg
+            class="theme-toggle__icon theme-toggle__icon--moon"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg
+            class="theme-toggle__icon theme-toggle__icon--sun"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="cs-page">
+      <header class="cs-hero" aria-labelledby="cs-title">
+        <div class="cs-hero-card">
+          <img
+            src="../images/cs-pc-hero.png"
+            alt="Plus Closet app screens: home feed, seller profile, and product grid"
+            style="width: 100%; height: auto; display: block; border-radius: 12px;"
+          />
+        </div>
+        <h1 id="cs-title" class="cs-title">Plus Closet</h1>
+        <div class="cs-meta">
+          <span>UX Designer &amp; Team Lead</span>
+          <span>3 designers</span>
+          <span>5 weeks</span>
+          <span>Mobile</span>
+          <span>B2C startup</span>
+          <span>2025</span>
+        </div>
+        <p class="cs-subtitle">
+          An inclusive resale platform built by and for plus-size women, designed to make shopping effortless and joyful. <a href="https://www.figma.com/design/FbTB3tnpXt1iRNA8BNAGwl/Springboard-Prototypes?node-id=7-792&amp;t=f50M8ZCeDAlOhWdb-1" class="cs-live-link" target="_blank" rel="noopener">See it live ↗</a>
+        </p>
+      </header>
+
+      <div class="cs-body">
+        <section aria-labelledby="overview-heading">
+          <h2 id="overview-heading" class="visually-hidden">Overview</h2>
+          <span class="cs-label">OVERVIEW</span>
+          <p>
+            The fast fashion and resale industry continues to fail plus-size shoppers. Brands claim
+            inclusivity, but real experience tells a different story: plus-size options are buried,
+            unflattering, or an afterthought across both physical stores and digital platforms.
+          </p>
+          <p>
+            Through Springboard's Industry Design Project, I was paired with the founder of Plus
+            Closet, an early-stage startup building a resale platform by and for plus-size women. Our
+            shared mission was to design a functional prototype for an inclusive resale experience
+            that centers plus-size women, empowers sellers, and makes shopping joyful and easy.
+          </p>
+          <p>
+            As team lead, I guided two UX designers through a five-week sprint — running weekly client
+            meetings, facilitating design reviews, and delegating based on each teammate's strengths.
+            As a designer, my own focus was the buyer-side flow, from wireframes to final prototype.
+          </p>
+        </section>
+
+        <section aria-labelledby="found-heading">
+          <h2 id="found-heading" class="visually-hidden">What I found</h2>
+          <span class="cs-label">WHAT I FOUND</span>
+        </section>
+
+          <div class="cs-finding-grid">
+            <div class="cs-finding-card">
+              <h3>Search fatigue</h3>
+              <blockquote>"I have to dig for my size... and still end up compromising."</blockquote>
+            </div>
+            <div class="cs-finding-card">
+              <h3>Emotional labor</h3>
+              <blockquote>Users feel discouraged, invisible, or even blamed by existing platforms.</blockquote>
+            </div>
+            <div class="cs-finding-card">
+              <h3>Exclusion by design</h3>
+              <blockquote>Depop and ThredUp prioritize aesthetics over accessibility — no filters for fit, body type, or size-forward browsing.</blockquote>
+            </div>
+            <div class="cs-finding-quote">
+              <p>"Most plus-size clothing is the only option, not a good one."</p>
+              <span class="cs-finding-quote__attr">— interview participant</span>
+            </div>
+          </div>
+
+          <p style="margin-top: 2.5rem;">
+            We benchmarked Depop, Poshmark, Etsy, and ThredUp — extracting best practices on boutique
+            seller branding and mobile-first interaction, while identifying where each fell short for
+            plus-size buyers specifically.
+          </p>
+
+        <section aria-labelledby="problem-heading">
+          <h2 id="problem-heading" class="visually-hidden">The problem, reframed</h2>
+          <span class="cs-label">THE PROBLEM, REFRAMED</span>
+          <div class="cs-problem-statement">
+            <span class="cs-problem-statement__label">Problem statement</span>
+            <p>
+              Plus-size fashion buyers and sellers need a dedicated platform that supports
+              size-inclusive resale and personalized closet branding because mainstream resale apps
+              marginalize their needs through poor discoverability, limited tools, and a lack of
+              social recognition.
+            </p>
+          </div>
+          <p>
+            Client interviews revealed our target persona: a stylish curator and fashion-savvy seller
+            managing a semi-professional closet with community influence.
+          </p>
+        </section>
+
+        <section aria-labelledby="leadership-heading">
+          <h2 id="leadership-heading" class="visually-hidden">The leadership challenge</h2>
+          <span class="cs-label">THE LEADERSHIP CHALLENGE</span>
+          <p>
+            Leading this team meant translating founder instincts and shifting priorities into one
+            shared design vocabulary. I ran weekly client meetings, created agendas, and presented
+            progress to keep stakeholders aligned. Internally, I facilitated design reviews to keep
+            the team focused and collaborative, delegated tasks based on each designer's strengths,
+            and kept momentum through scope changes that came up mid-sprint.
+          </p>
+          <div class="cs-callout">
+            <p>
+              A significant part of the design process was translating complex, sometimes conflicting
+              feedback into actionable next steps without losing the inclusive sizing mission that
+              brought us to the project.
+            </p>
+          </div>
+        </section>
+
+        <section aria-labelledby="key-heading">
+          <h2 id="key-heading" class="visually-hidden">Key design decisions</h2>
+          <span class="cs-label">KEY DESIGN DECISIONS</span>
+
+          <div class="cs-decision cs-decision--media">
+            <div class="cs-decision__text">
+              <h3>Visual-first dashboard</h3>
+              <p>
+                Usability testing revealed a strong preference for image-only product cards. This
+                reduced decision fatigue by keeping the layout visual and simple, surfaced more
+                products per screen, and aligned with how users actually browse which testing revealed
+                to be by aesthetic and style, rather than just filters.
+              </p>
+            </div>
+            <button type="button" class="cs-artifact-thumb cs-phone" aria-label="View full visual-first dashboard screen">
+              <img src="../images/cs-pc-dashboard.png" alt="Plus Closet home dashboard with image-first product cards, a sellers row, and a popular section" />
+              <span class="cs-artifact-thumb__hint" aria-hidden="true">View full</span>
+            </button>
+          </div>
+
+          <div class="cs-decision cs-decision--media cs-decision--reverse">
+            <button type="button" class="cs-artifact-thumb cs-phone" aria-label="View full plain-language condition tags screen">
+              <img src="../images/cs-pc-condition.png" alt="Product grid showing plain-language condition tags like Good, Excellent, and Like New on each listing" />
+              <span class="cs-artifact-thumb__hint" aria-hidden="true">View full</span>
+            </button>
+            <div class="cs-decision__text">
+              <h3>Resolving the NWT/NWOT conflict</h3>
+              <p>
+                In initial testing, every participant but one struggled with resale shorthand like
+                "New with Tags (NWT)" and "New without Tags (NWOT)" — the one exception simply hadn't
+                noticed the labels, and once pointed out, found them confusing too. I replaced the
+                shorthand with plain-language condition tags (Excellent, Good, Like New) in the
+                prototype. In follow-up testing, the new labels generated no confusion and no comments
+                at all — the strongest signal that the design was working as intended.
+              </p>
+            </div>
+          </div>
+
+          <div class="cs-decision">
+            <h3>Horizontal swipe over slide-up UI</h3>
+            <p>
+              Early prototypes used a slide-up modal pattern that felt awkward in testing. We switched
+              to horizontal swipe cards, which were universally preferred and matched how users
+              naturally browsed product detail and imagery on mobile.
+            </p>
+            <div class="cs-phone-row">
+              <button type="button" class="cs-artifact-thumb cs-phone" aria-label="View full product detail with horizontal swipe gallery">
+                <img src="../images/cs-pc-swipe-1.png" alt="Product detail for a floral wrap dress with a horizontal swipe image carousel and size, condition, and measurements" />
+                <span class="cs-artifact-thumb__hint" aria-hidden="true">View full</span>
+              </button>
+              <button type="button" class="cs-artifact-thumb cs-phone" aria-label="View full seller profile screen">
+                <img src="../images/cs-pc-swipe-2.png" alt="Seller profile with listings, sold items, and reviews browsed via horizontal swipe tabs" />
+                <span class="cs-artifact-thumb__hint" aria-hidden="true">View full</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="results-heading">
+          <h2 id="results-heading" class="visually-hidden">Results</h2>
+          <span class="cs-label">RESULTS</span>
+
+          <div style="overflow-x: auto; margin: 1.5rem 0;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+              <thead>
+                <tr style="border-bottom: 1px solid var(--border); text-align: left;">
+                  <th style="padding: 0.75rem 1rem 0.75rem 0; font-weight: 600;">Design element</th>
+                  <th style="padding: 0.75rem 1rem; font-weight: 600;">Initial problem</th>
+                  <th style="padding: 0.75rem 0 0.75rem 1rem; font-weight: 600;">Solution</th>
+                </tr>
+              </thead>
+              <tbody style="color: var(--text-muted);">
+                <tr style="border-bottom: 1px solid var(--border);">
+                  <td style="padding: 0.75rem 1rem 0.75rem 0;">Dashboard cards</td>
+                  <td style="padding: 0.75rem 1rem;">Info-dense layouts cluttered browsing</td>
+                  <td style="padding: 0.75rem 0 0.75rem 1rem;">Image-first grid boosted scanning (+75% preference)</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border);">
+                  <td style="padding: 0.75rem 1rem 0.75rem 0;">Filter placement</td>
+                  <td style="padding: 0.75rem 1rem;">Size buried in filter hierarchy</td>
+                  <td style="padding: 0.75rem 0 0.75rem 1rem;">Moved size to the first filter slot</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border);">
+                  <td style="padding: 0.75rem 1rem 0.75rem 0;">Condition labels</td>
+                  <td style="padding: 0.75rem 1rem;">"NWT/NWOT" confused 5 of 5 participants</td>
+                  <td style="padding: 0.75rem 0 0.75rem 1rem;">Replaced with plain-language tags; re-testing showed zero confusion or comments</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0.75rem 1rem 0.75rem 0;">Interaction pattern</td>
+                  <td style="padding: 0.75rem 1rem;">Slide-up UI felt awkward</td>
+                  <td style="padding: 0.75rem 0 0.75rem 1rem;">Switched to horizontal swipe cards</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            We tested five moderated sessions across the full buyer flow — browse, filter, product,
+            checkout. The image-first grid was preferred by 75% of users, and after the plain-language
+            condition tags replaced "NWT/NWOT," follow-up testing surfaced zero confusion or comments
+            about them at all.
+          </p>
+
+          <blockquote class="cs-quote">
+            &ldquo;Working with Quynh, Kristin, and Isaac was professional, highly interactive, and thoroughly enjoyable. You are gifted, creative, and a pleasure to work with.&rdquo;
+            <cite>Plus Closet Founder</cite>
+          </blockquote>
+
+          <p>
+            The client has since moved to hand designs to developers, pitch the prototype to VCs, and
+            explore additional features like wishlists and regional discovery.
+          </p>
+        </section>
+
+        <section aria-labelledby="reflection-heading">
+          <h2 id="reflection-heading" class="visually-hidden">Reflection</h2>
+          <span class="cs-label">REFLECTION</span>
+          <p>
+            This project reinforced to me that inclusive design isn't a layer applied to an existing
+            system, but a product of when sizing, language, and interaction patterns are built around
+            how marginalized users already navigate friction and distrust.
+          </p>
+          <p>
+            Leading two designers through real client ambiguity taught me how to leverage data to
+            align stakeholders and communicate design decisions effectively.
+          </p>
+          <p>
+            What I'd do next: pair these flows with live inventory listings, stress-test condition
+            vocabulary across categories beyond apparel, and validate seller-side checkout edge cases
+            that we didn't have time to test in our time constraint.
+          </p>
+        </section>
+
+        <p class="cs-next">
+          <a href="../work/welcomemn.html">Next: WelcomeMN →</a>
+        </p>
+      </div>
+      </div>
+    </main>
+
+    <div class="cs-lightbox" id="cs-lightbox" hidden>
+      <button type="button" class="cs-lightbox__backdrop" aria-label="Close expanded image"></button>
+      <div class="cs-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Expanded image">
+        <button type="button" class="cs-lightbox__close" aria-label="Close">×</button>
+        <img class="cs-lightbox__img" src="" alt="" />
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__greeting">Thanks for stopping by!</p>
+        <p class="site-footer__reach">
+          Reach me at
+          <a href="mailto:qvan@andrew.cmu.edu">qvan@andrew.cmu.edu</a>. Love a coffee chat!
+        </p>
+        <p class="site-footer__quick">
+          <a
+            href="https://drive.google.com/file/d/1D-Vr1g6KDJfkitrsRfkTs-6J6AD7GKog/view?usp=sharing"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Resume</a
+          >
+          <span class="site-footer__pipe" aria-hidden="true">|</span>
+          <a
+            href="https://linkedin.com/in/quynhxvan"
+            rel="noopener noreferrer"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <span class="site-footer__pipe" aria-hidden="true">|</span>
+          <a href="mailto:qvan@andrew.cmu.edu">Email</a>
+        </p>
+        <div class="site-footer__signoff-row">
+          <p class="site-footer__signoff">Made with 🍵 by Quynh Van</p>
+          <div class="sun-arc-wrap">
+            <svg class="sun-arc" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Local sun position</title>
+              <path
+                d="M2 24 A22 22 0 0 1 46 24"
+                stroke="var(--border)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <circle class="sun-dot" cx="24" cy="24" r="3" fill="var(--accent)" />
+            </svg>
+            <span class="sun-arc-hint" aria-hidden="true">local time</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/interactions.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+    <script src="../js/cursor.js" defer></script>
+    <script src="../js/warmth.js" defer></script>
+    <script>
+      document.addEventListener("click", function (e) {
+        var ripple = document.createElement("div");
+        ripple.className = "ripple";
+        ripple.style.left = e.clientX + "px";
+        ripple.style.top = e.clientY + "px";
+        document.body.appendChild(ripple);
+        function removeRipple() {
+          if (ripple.parentNode) ripple.remove();
+        }
+        ripple.addEventListener("animationend", removeRipple, { once: true });
+        setTimeout(function () {
+          if (ripple.parentNode) ripple.remove();
+        }, 800);
+      });
+    </script>
+    <script>
+      (function () {
+        var dot = document.querySelector(".sun-dot");
+        if (!dot) return;
+
+        function updateSun() {
+          var now = new Date();
+          var hours = now.getHours() + now.getMinutes() / 60;
+          var isDay = hours >= 6 && hours < 20;
+
+          if (!isDay) {
+            dot.setAttribute("fill", "var(--text-2)");
+            dot.style.opacity = "0.3";
+            var nx =
+              2 +
+              44 *
+                (hours >= 20 ? 1 - (hours - 20) / 10 : hours / 6);
+            dot.setAttribute("cx", nx.toFixed(1));
+            dot.setAttribute("cy", "24");
+            return;
+          }
+
+          dot.setAttribute("fill", "var(--accent)");
+          dot.style.opacity = "1";
+          var dayProgress = (hours - 6) / 14;
+          var angle = Math.PI * dayProgress;
+          var cx = 2 + 44 * dayProgress;
+          var cy = 24 - Math.sin(angle) * 22;
+          dot.setAttribute("cx", cx.toFixed(1));
+          dot.setAttribute("cy", cy.toFixed(1));
+        }
+
+        updateSun();
+        setInterval(updateSun, 60000);
+      })();
+    </script>
+    <script>
+(function() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (window.location.pathname !== '/' && !window.location.pathname.endsWith('index.html') && window.location.pathname !== '') return;
+
+  function spawnLeaf() {
+    function makeLeaf(offsetRight, delay, size) {
+      var leaf = document.createElement('div');
+      leaf.innerHTML = '<svg width="' + size + '" height="' + Math.round(size*1.375) + '" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10C4 10 1 7 1 4C1 2.34 2.34 1 4 1C5.66 1 7 2.34 7 4C7 7 4 10 4 10Z" fill="var(--accent)" opacity="0.4"/></svg>';
+      leaf.style.cssText = 'position:fixed;top:-20px;right:' + offsetRight + 'px;pointer-events:none;z-index:9990;animation:leaf-fall 7s cubic-bezier(0.2,0,0.8,1) forwards;animation-delay:' + delay + 's;opacity:0;';
+      document.body.appendChild(leaf);
+      setTimeout(function() { if (leaf.parentNode) leaf.remove(); }, (7 + delay) * 1000 + 500);
+    }
+
+    var baseRight = 60 + Math.random() * 80;
+    makeLeaf(baseRight, 0, 8);
+    makeLeaf(baseRight - 3, 0.4, 6);
+  }
+
+  // First leaf: 20 seconds after page load
+  setTimeout(spawnLeaf, 20000);
+
+  // Repeat every 8 minutes after that
+  setTimeout(function() {
+    spawnLeaf();
+    setInterval(spawnLeaf, 480000);
+  }, 500000);
+
+  // Also still plays if idle for 30 seconds
+  var idleTimer;
+  var idlePlayed = false;
+  function resetIdle() {
+    clearTimeout(idleTimer);
+    if (!idlePlayed) {
+      idleTimer = setTimeout(function() {
+        idlePlayed = true;
+        spawnLeaf();
+      }, 30000);
+    }
+  }
+  document.addEventListener('mousemove', resetIdle);
+  document.addEventListener('scroll', resetIdle);
+  resetIdle();
+})();
+    </script>
+    <script>
+(function() {
+  var track = document.querySelector('.scroll-track');
+  var fill = document.getElementById('scroll-track-fill');
+  if (!track || !fill) return;
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    fill.style.height = progress + '%';
+    track.classList.toggle('visible', scrollTop > 200);
+  }, { passive: true });
+})();
+    </script>
+    <script>
+(function() {
+  var lightbox = document.getElementById('cs-lightbox');
+  if (!lightbox) return;
+  var lightboxImg = lightbox.querySelector('.cs-lightbox__img');
+  var closeBtn = lightbox.querySelector('.cs-lightbox__close');
+  var backdrop = lightbox.querySelector('.cs-lightbox__backdrop');
+  var lastFocus = null;
+
+  function openLightbox(src, alt) {
+    lastFocus = document.activeElement;
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightbox.hidden = false;
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    lightboxImg.removeAttribute('src');
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+
+  document.querySelectorAll('.cs-artifact-thumb').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var img = btn.querySelector('img');
+      if (img) openLightbox(img.src, img.alt);
+    });
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+  backdrop.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', function(e) {
+    if (!lightbox.hidden && e.key === 'Escape') closeLightbox();
+  });
+})();
+    </script>
+    <script>
+(function() {
+  document.querySelectorAll('a').forEach(function(link) {
+    if (link.hostname === window.location.hostname && !link.hash) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var href = this.href;
+        document.body.style.opacity = '0';
+        document.body.style.transition = 'opacity 0.3s ease';
+        setTimeout(function() {
+          window.location.href = href;
+        }, 300);
+      });
+    }
+  });
+})();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" data-scheme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <title>WelcomeMN — Quynh Van</title>
+    <meta
+      name="description"
+      content="WelcomeMN — a web-based resource platform for immigrants navigating their first year in the U.S."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <script>
+(function(){
+  var s = localStorage.getItem('qv-color-scheme');
+  document.documentElement.setAttribute('data-scheme', s || 'light');
+})();
+    </script>
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+  <body class="case-study">
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div class="scroll-track" aria-hidden="true">
+      <div class="scroll-track__fill" id="scroll-track-fill"></div>
+    </div>
+    <div class="cs-back">
+      <a href="../index.html#work">← Work</a>
+    </div>
+    <div id="scroll-progress" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="logo" href="../index.html">Quynh Van</a>
+      <div class="site-header__end">
+        <button
+          type="button"
+          class="theme-toggle"
+          aria-label="Switch to dark mode"
+        >
+          <svg
+            class="theme-toggle__icon theme-toggle__icon--moon"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg
+            class="theme-toggle__icon theme-toggle__icon--sun"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="cs-page">
+      <header class="cs-hero" aria-labelledby="cs-title">
+        <div class="cs-hero-card">
+          <video
+            class="cs-hero-video"
+            muted
+            playsinline
+            preload="auto"
+            style="width: 100%; height: auto; display: block; border-radius: 8px;"
+          >
+            <source src="../images/cs-wmn-hero.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <h1 id="cs-title" class="cs-title">WelcomeMN</h1>
+        <div class="cs-meta">
+          <span>Product Designer (Solo)</span>
+          <span>8 weeks</span>
+          <span>Web</span>
+          <span>Civic tech</span>
+          <span>2026</span>
+        </div>
+        <p class="cs-subtitle">
+          A resource platform for immigrants navigating their first year in the U.S. <a href="https://welcomemn.lovable.app" class="cs-live-link" target="_blank" rel="noopener">See it live ↗</a>
+        </p>
+      </header>
+
+      <div class="cs-body">
+        <section aria-labelledby="overview-heading">
+          <h2 id="overview-heading" class="visually-hidden">Overview</h2>
+          <span class="cs-label">OVERVIEW</span>
+          <p>
+            Newly arrived immigrants face an overwhelming first year in the U.S., navigating
+            transportation, employment, paperwork, and community, often in a new language and
+            without clear guidance.
+          </p>
+          <p>
+            WelcomeMN is a localized, web-based resource platform designed to reduce the cognitive
+            and emotional load of that first year by consolidating fragmented resources into a
+            single, trusted, accessible experience.
+          </p>
+          <p>
+            This project is close to me. I grew up watching my family sponsor relatives immigrating to
+            the U.S. and saw how much emotional, logistical, and linguistic labor the process
+            required. When I later spoke directly with immigrants who had arrived within the past
+            five years, I heard the same story: confusion, isolation, and reliance on word-of-mouth
+            for critical information.
+          </p>
+          <p>
+            I wanted to design a resource that helped logistically guide what immigrants needed to do, but just as importantly, offer emotional motivation for the difficult journey.
+          </p>
+        </section>
+
+        <section aria-labelledby="found-heading">
+          <h2 id="found-heading" class="visually-hidden">What I found</h2>
+          <span class="cs-label">WHAT I FOUND</span>
+          <p>
+            Five semi-structured interviews with immigrants who arrived in the U.S. within the past
+            five years. Different countries of origin, strikingly overlapping experiences.
+          </p>
+        </section>
+
+          <div class="cs-finding-grid">
+            <div class="cs-finding-card">
+              <h3>1. Information exists — but it's fragmented</h3>
+              <blockquote>"You just ask around. There's no one place."</blockquote>
+              <p>
+                Resources are scattered across agencies, languages, and websites.
+              </p>
+              <p class="cs-finding-implication">
+                Design implication: A single, trusted, localized source of truth is missing.
+              </p>
+            </div>
+            <div class="cs-finding-card">
+              <h3>2. Employment is social, not systemic</h3>
+              <blockquote>"My cousin found me a job at a factory."</blockquote>
+              <p>
+                Most users found work through personal networks, not official job boards.
+              </p>
+              <p class="cs-finding-implication">
+                Design implication: Employment resources should feel community-verified, not
+                bureaucratic.
+              </p>
+            </div>
+            <div class="cs-finding-card">
+              <h3>3. Emotional isolation is as hard as logistics</h3>
+              <blockquote>"You feel like no one else is going through it."</blockquote>
+              <p>The first year felt lonely even when living with family.</p>
+              <p class="cs-finding-implication">
+                Design implication: A successful tool must validate emotions, not just deliver
+                information.
+              </p>
+            </div>
+            <div class="cs-finding-card">
+              <h3>4. Paperwork without language support is paralyzing</h3>
+              <blockquote>"Paperwork was impossible without help."</blockquote>
+              <p>
+                Forms and official instructions created anxiety, especially when mistakes felt
+                high-stakes and irreversible.
+              </p>
+              <p class="cs-finding-implication">
+                Design implication: Information must be simplified, contextualized, and emotionally
+                low-pressure.
+              </p>
+            </div>
+            <div class="cs-finding-card">
+              <h3>5. Driving = Freedom</h3>
+              <blockquote>"It's hard to feel free without being able to drive."</blockquote>
+              <p>
+                Mobility was the turning point for independence. Without driving, users struggled to
+                access work, education, and social life, especially in Minnesota.
+              </p>
+              <p class="cs-finding-implication">
+                Design implication: Surface driving and DMV support early, with translated
+                information and language-specific driving schools.
+              </p>
+            </div>
+          </div>
+
+        <span class="cs-label">RESEARCH ARTIFACTS</span>
+
+        <div class="cs-artifact-grid">
+          <button type="button" class="cs-artifact-thumb" aria-label="View full How Might We post-it synthesis">
+            <img src="../images/cs-wmn-postits.png" alt="How Might We post-it synthesis" />
+            <span class="cs-artifact-thumb__hint" aria-hidden="true">View full</span>
+          </button>
+          <div class="cs-artifact-copy">
+            <p class="cs-artifact-copy__title">How Might We synthesis</p>
+            <p class="cs-artifact-copy__body">Using interview insights, I reframed each finding into HMW questions then mapped them against a MoSCoW framework to prioritize the MVP. Multilingual guidance and emotional progress tracking moved immediately to must-haves. Visual guidance was prioritized over dense text.</p>
+          </div>
+        </div>
+
+        <div class="cs-artifact-grid">
+          <button type="button" class="cs-artifact-thumb" aria-label="View full storyboard of Linh's first year">
+            <img src="../images/cs-wmn-storyboard.png" alt="Storyboard of Linh's first year" />
+            <span class="cs-artifact-thumb__hint" aria-hidden="true">View full</span>
+          </button>
+          <div class="cs-artifact-copy">
+            <p class="cs-artifact-copy__title">Storyboarding Linh's first year</p>
+            <p class="cs-artifact-copy__body">I storyboarded a persona's first 6–12 months to understand how emotions fluctuate alongside practical tasks. The key insight: progress is not linear, and emotional distress often coincides with bureaucratic friction. Small wins create outsized confidence. This shaped the decision to design for emotional progress, not just task completion.</p>
+          </div>
+        </div>
+
+        <section aria-labelledby="system-heading">
+          <h2 id="system-heading" class="visually-hidden">The system problem</h2>
+          <span class="cs-label">THE SYSTEM PROBLEM</span>
+          <p>Ultimately, this is an information architecture problem before it's a design problem.</p>
+          <p>
+            Resources exist. The system that surfaces them doesn't. Everything is optimized for the
+            institution publishing it, not the person trying to navigate it. The challenge was
+            consolidation, hierarchy, and trust: deciding what surfaces first, what language it
+            speaks, and whether it feels built for the person reading it.
+          </p>
+          <p>
+            That framing shaped every decision: category-based navigation over chronological
+            checklists, phone-first contact options, and a language selector visible in top navigation.
+          </p>
+
+          <button type="button" class="cs-artifact-thumb cs-artifact-thumb--wide" aria-label="View full early WelcomeHome MN wireframes">
+            <img src="../images/cs-wmn-early-wireframes.png" alt="Early WelcomeHome MN wireframes: home, first-year timeline, essential resources, and transportation" />
+            <span class="cs-artifact-thumb__hint" aria-hidden="true">View full</span>
+          </button>
+          <p class="cs-image-caption">Early wireframes exploring home, timeline navigation, resource categories, and transportation before the web first pivot.</p>
+        </section>
+
+        <section aria-labelledby="decision-heading">
+          <h2 id="decision-heading" class="visually-hidden">The decision that mattered</h2>
+          <span class="cs-label">THE DECISION THAT MATTERED</span>
+          <p>I initially designed a mobile app and created wireframes that tested onboarding and navigation flows that felt promising in the abstract. This early exploration helped clarify what information users needed upfront and how a guided experience might feel.</p>
+          <p>
+            Then interviews surfaced something I hadn't anticipated: Many newly arrived immigrants weren't hesitant to download apps because of storage or data. They just didn't have the habit. Information spread through community: a link shared in a WhatsApp group, a URL passed at a cultural center, something a cousin texted you. Nobody was going looking for an app. They were receiving links.
+          </p>
+          <p>
+            I decided a browser-based experience better aligned with user behavior and allowed information to be accessed immediately, shared easily, and used across devices without downloads or account creation. One less barrier during an already overwhelming transition.
+          </p>
+          <p>
+            The mobile-first instinct was mine. The web-first solution came from the people I was
+            designing for.
+          </p>
+          <button type="button" class="cs-artifact-thumb cs-artifact-thumb--wide" aria-label="View full early mobile app wireframes">
+            <img src="../images/cs-wmn-mobile-wireframes.png" alt="Early mobile app wireframes before pivoting to web" />
+            <span class="cs-artifact-thumb__hint" aria-hidden="true">View full</span>
+          </button>
+          <p class="cs-image-caption">Early mobile wireframes exploring onboarding and navigation, built to understand the problem before the platform decision was made.</p>
+        </section>
+
+        <section aria-labelledby="key-heading">
+          <h2 id="key-heading" class="visually-hidden">Key design decisions</h2>
+          <span class="cs-label">KEY DESIGN DECISIONS</span>
+
+          <div class="cs-decision">
+            <h3>From timeline to categories</h3>
+            <p>
+              My first design used a prescriptive timeline (Week 1, Month 1, Month 3). Testing
+              revealed the word "should" was doing damage. Users felt pressure from tasks they weren't
+              ready for. I replaced the timeline with category-based quick access: Driving, Work,
+              Healthcare, Community. Navigate by need, not deadline. Immigration isn't linear. The
+              architecture shouldn't pretend it is.
+            </p>
+            <div class="cs-image-pair">
+              <figure class="cs-pair-figure">
+                <button type="button" class="cs-artifact-thumb" aria-label="View full category-based quick access design">
+                  <img src="../images/cs-wmn-categories.png" alt="Dashboard with category-based quick access: Driving, Documents, Healthcare, Housing, Banking, Community" />
+                  <span class="cs-artifact-thumb__hint" aria-hidden="true">View full</span>
+                </button>
+                <figcaption>After: category-based quick access</figcaption>
+              </figure>
+              <figure class="cs-pair-figure">
+                <button type="button" class="cs-artifact-thumb" aria-label="View full settlement timeline design">
+                  <img src="../images/cs-wmn-timeline.png" alt="Settlement timeline with Week 1, Month 1, Month 3 tabs and suggested tasks" />
+                  <span class="cs-artifact-thumb__hint" aria-hidden="true">View full</span>
+                </button>
+                <figcaption>Before: prescriptive settlement timeline</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="cs-decision">
+            <h3>Phone numbers over links</h3>
+            <p>
+              Users instinctively looked for phone numbers even when links were available. For legal
+              aid, emergency assistance, and community organizations, speaking to a person felt safer
+              than clicking a link. I surfaced phone-first contact options alongside web links for
+              every high-stakes category.
+            </p>
+            <button type="button" class="cs-artifact-thumb cs-artifact-thumb--wide cs-artifact-thumb--ui" aria-label="View full resource directory with phone-first contact options">
+              <img src="../images/cs-wmn-contact.png" alt="Resource directory showing phone numbers surfaced alongside Visit Website links for state services and tax assistance" />
+              <span class="cs-artifact-thumb__hint" aria-hidden="true">View full</span>
+            </button>
+          </div>
+
+          <div class="cs-decision">
+            <h3>Emergency quick access</h3>
+            <p>
+              Users asked: "What if something is wrong? Where do I go right now?" I introduced a
+              persistent "Need Help Now?" entry point linking to shelter, food assistance, and crisis
+              lines, accessible from any page. Urgency needed its own affordance.
+            </p>
+            <div class="cs-image-pair">
+              <figure class="cs-pair-figure">
+                <button type="button" class="cs-artifact-thumb" aria-label="View full Need Help Now emergency screen">
+                  <img src="../images/cs-wmn-emergency.png" alt="Need Help Now screen with 911, 988, and 211 emergency call cards" />
+                  <span class="cs-artifact-thumb__hint" aria-hidden="true">View full</span>
+                </button>
+                <figcaption>Persistent "Need Help Now?" entry point</figcaption>
+              </figure>
+              <figure class="cs-pair-figure">
+                <button type="button" class="cs-artifact-thumb" aria-label="View full quick access by situation screen">
+                  <img src="../images/cs-wmn-emergency2.png" alt="Quick access by situation: shelter, food, feeling unsafe, and mental health crisis with phone numbers" />
+                  <span class="cs-artifact-thumb__hint" aria-hidden="true">View full</span>
+                </button>
+                <figcaption>Quick access by situation</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <p style="margin: 2rem 0;">
+          <a href="https://welcomemn.lovable.app" target="_blank" rel="noopener" class="cs-live-link">Explore the live prototype ↗</a>
+        </p>
+
+        <section aria-labelledby="reflection-heading">
+          <h2 id="reflection-heading" class="visually-hidden">Reflection</h2>
+          <span class="cs-label">REFLECTION</span>
+          <p>
+            This project reinforced that designing for underserved communities requires designing for both functional needs and emotional support.
+          </p>
+          <p>
+            Access isn't only about information — it's also about instilling confidence, dignity, and feeling less alone.
+          </p>
+          <p>
+            WelcomeMN represents my broader design philosophy: using technology not just to simplify systems, but to humanize them.
+          </p>
+        </section>
+
+        <p class="cs-next">
+          <a href="../work/pluscloset.html">Next: Plus Closet →</a>
+        </p>
+      </div>
+      </div>
+    </main>
+
+    <div class="cs-lightbox" id="cs-lightbox" hidden>
+      <button type="button" class="cs-lightbox__backdrop" aria-label="Close expanded image"></button>
+      <div class="cs-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Expanded image">
+        <button type="button" class="cs-lightbox__close" aria-label="Close">×</button>
+        <img class="cs-lightbox__img" src="" alt="" />
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__greeting">Thanks for stopping by!</p>
+        <p class="site-footer__reach">
+          Reach me at
+          <a href="mailto:qvan@andrew.cmu.edu">qvan@andrew.cmu.edu</a>. Love a coffee chat!
+        </p>
+        <p class="site-footer__quick">
+          <a
+            href="https://drive.google.com/file/d/1D-Vr1g6KDJfkitrsRfkTs-6J6AD7GKog/view?usp=sharing"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Resume</a
+          >
+          <span class="site-footer__pipe" aria-hidden="true">|</span>
+          <a
+            href="https://linkedin.com/in/quynhxvan"
+            rel="noopener noreferrer"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <span class="site-footer__pipe" aria-hidden="true">|</span>
+          <a href="mailto:qvan@andrew.cmu.edu">Email</a>
+        </p>
+        <div class="site-footer__signoff-row">
+          <p class="site-footer__signoff">Made with 🍵 by Quynh Van</p>
+          <div class="sun-arc-wrap">
+            <svg class="sun-arc" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Local sun position</title>
+              <path
+                d="M2 24 A22 22 0 0 1 46 24"
+                stroke="var(--border)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <circle class="sun-dot" cx="24" cy="24" r="3" fill="var(--accent)" />
+            </svg>
+            <span class="sun-arc-hint" aria-hidden="true">local time</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/page-effects.js" defer></script>
+    <script src="../js/interactions.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+    <script src="../js/cursor.js" defer></script>
+    <script src="../js/warmth.js" defer></script>
+    <script>
+      document.addEventListener("click", function (e) {
+        var ripple = document.createElement("div");
+        ripple.className = "ripple";
+        ripple.style.left = e.clientX + "px";
+        ripple.style.top = e.clientY + "px";
+        document.body.appendChild(ripple);
+        function removeRipple() {
+          if (ripple.parentNode) ripple.remove();
+        }
+        ripple.addEventListener("animationend", removeRipple, { once: true });
+        setTimeout(function () {
+          if (ripple.parentNode) ripple.remove();
+        }, 800);
+      });
+    </script>
+    <script>
+      (function () {
+        var dot = document.querySelector(".sun-dot");
+        if (!dot) return;
+
+        function updateSun() {
+          var now = new Date();
+          var hours = now.getHours() + now.getMinutes() / 60;
+          var isDay = hours >= 6 && hours < 20;
+
+          if (!isDay) {
+            dot.setAttribute("fill", "var(--text-2)");
+            dot.style.opacity = "0.3";
+            var nx =
+              2 +
+              44 *
+                (hours >= 20 ? 1 - (hours - 20) / 10 : hours / 6);
+            dot.setAttribute("cx", nx.toFixed(1));
+            dot.setAttribute("cy", "24");
+            return;
+          }
+
+          dot.setAttribute("fill", "var(--accent)");
+          dot.style.opacity = "1";
+          var dayProgress = (hours - 6) / 14;
+          var angle = Math.PI * dayProgress;
+          var cx = 2 + 44 * dayProgress;
+          var cy = 24 - Math.sin(angle) * 22;
+          dot.setAttribute("cx", cx.toFixed(1));
+          dot.setAttribute("cy", cy.toFixed(1));
+        }
+
+        updateSun();
+        setInterval(updateSun, 60000);
+      })();
+    </script>
+    <script>
+(function() {
+  var lightbox = document.getElementById('cs-lightbox');
+  if (!lightbox) return;
+  var lightboxImg = lightbox.querySelector('.cs-lightbox__img');
+  var closeBtn = lightbox.querySelector('.cs-lightbox__close');
+  var backdrop = lightbox.querySelector('.cs-lightbox__backdrop');
+  var lastFocus = null;
+
+  function openLightbox(src, alt) {
+    lastFocus = document.activeElement;
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightbox.hidden = false;
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    lightboxImg.removeAttribute('src');
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+
+  document.querySelectorAll('.cs-artifact-thumb').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var img = btn.querySelector('img');
+      if (img) openLightbox(img.src, img.alt);
+    });
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+  backdrop.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', function(e) {
+    if (!lightbox.hidden && e.key === 'Escape') closeLightbox();
+  });
+})();
+    </script>
+    <script>
+(function() {
+  var track = document.querySelector('.scroll-track');
+  var fill = document.getElementById('scroll-track-fill');
+  if (!track || !fill) return;
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    fill.style.height = progress + '%';
+    track.classList.toggle('visible', scrollTop > 200);
+  }, { passive: true });
+})();
+    </script>
+    <script>
+(function() {
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function playFromStart(vid) {
+    vid.currentTime = 0;
+    var p = vid.play();
+    if (p && p.catch) p.catch(function() {});
+  }
+
+  document.querySelectorAll('.cs-hero-video').forEach(function(vid) {
+    // Freeze on the first frame whenever the clip finishes
+    vid.addEventListener('ended', function() {
+      vid.currentTime = 0;
+      vid.pause();
+    });
+
+    // Replay once on hover, then freeze again
+    var trigger = vid.closest('.cs-hero-card') || vid.parentElement;
+    if (trigger) {
+      trigger.addEventListener('mouseenter', function() {
+        playFromStart(vid);
+      });
+    }
+
+    // Autoplay once when the page loads, then freeze on the first frame
+    if (!reduceMotion) {
+      if (vid.readyState >= 2) {
+        playFromStart(vid);
+      } else {
+        vid.addEventListener('loadeddata', function onLoaded() {
+          vid.removeEventListener('loadeddata', onLoaded);
+          playFromStart(vid);
+        });
+      }
+    }
+  });
+})();
+    </script>
+  </body>
+</html>
