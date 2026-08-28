@@ -171,6 +171,47 @@
         </div>
       </section>
 
+      <section id="research" class="research-band" aria-labelledby="research-heading">
+        <h2 id="research-heading" class="research-band__label">Current Research.</h2>
+        <p class="research-band__sub">in progress — process, not a polished case study yet</p>
+
+        <article class="research-card">
+          <div class="research-card__top">
+            <h3 class="research-card__title">Clinical care-coordination dashboard</h3>
+            <span class="research-status">
+              <span class="research-status__dot" aria-hidden="true"></span>
+              Semester 1 · information architecture phase
+            </span>
+          </div>
+          <p class="research-card__meta">CMU Human-Computer Interaction Institute · UPMC collaboration</p>
+
+          <p class="research-card__lede">
+            Research assistant on a clinical care-coordination project at the CMU Human-Computer Interaction Institute, advised by <strong>Prof. John Zimmerman</strong> and working under PhD researcher <strong>Minjung Park</strong>. I'm shaping the information architecture for an auto-documentation dashboard that supports ICU nurses and respiratory therapists during the SAT/SBT “Wake Up and Breathe” critical-care protocol — translating clinical workflow and co-design research into structured dashboard concepts.
+          </p>
+
+          <div class="research-cols">
+            <div class="research-col">
+              <h4 class="research-col__label">What I'm working on</h4>
+              <ul class="research-list">
+                <li>Mapping the SAT/SBT protocol into a clear information architecture</li>
+                <li>Defining what should be auto-captured vs. clinician-confirmed</li>
+                <li>Differentiating views across nurse, respiratory therapist, and charge-nurse roles</li>
+              </ul>
+            </div>
+            <div class="research-col">
+              <h4 class="research-col__label">Open questions</h4>
+              <ul class="research-list">
+                <li>Which moments in the protocol most need documentation support — and which should stay out of the way?</li>
+                <li>How much automation earns clinician trust without hiding accountability?</li>
+                <li>Where do roles need shared context vs. their own tailored view?</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="research-card__footnote">Contributing to a paper submission targeting January 2027.</p>
+        </article>
+      </section>
+
       <section id="making" class="making-band" aria-labelledby="making-heading">
         <h2 id="making-heading" class="making-band__label">Making.</h2>
         <p class="making-band__sub">other things I've made</p>
@@ -403,7 +444,7 @@
         if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
         var targets = document.querySelectorAll(
-          ".work-band__head, .work-row, .making-band, .about-block, .reading-block, .reading-grid, .writing-teaser, .photo-strip-section, .site-footer"
+          ".work-band__head, .work-row, .research-band, .making-band, .about-block, .reading-block, .reading-grid, .writing-teaser, .photo-strip-section, .site-footer"
         );
 
         targets.forEach(function (el) {
