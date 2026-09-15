@@ -394,7 +394,7 @@ main header.intro.is-intro-ready .intro__bio {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  flex-shrink: 0;
+  max-width: 100%;
   padding: 0.3rem 0.7rem;
   font-size: 0.6875rem;
   font-weight: 500;
@@ -406,6 +406,7 @@ main header.intro.is-intro-ready .intro__bio {
 }
 
 .research-status__dot {
+  flex-shrink: 0;
   width: 6px;
   height: 6px;
   border-radius: 50%;
