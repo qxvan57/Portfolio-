@@ -1037,7 +1037,8 @@ a.making-item:hover .making-item__title {
 
   .about-block__photo {
     width: 100%;
-    max-height: 280px;
+    max-height: 420px;
+    object-position: center 22%;
   }
 
   .writing-list__link {
@@ -1517,6 +1518,23 @@ img.photo-strip__item {
 @media (max-width: 600px) {
   .photo-strip {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reading-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+
+  .reading-grid .book-wrapper {
+    min-width: 0;
+  }
+
+  .book-glass {
+    padding: 1rem 0.65rem;
+  }
+
+  .book-title {
+    white-space: normal;
   }
 }
 
